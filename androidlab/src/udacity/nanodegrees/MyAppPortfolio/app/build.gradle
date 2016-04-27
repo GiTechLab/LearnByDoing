@@ -1,25 +1,49 @@
+/*
+* ./gradle/wrapper/ 文件夹里面可以看到有两个文件，其中，gradle-wrapper.properties
+* 里面声明了gradle的目录与下载路径以及当前项目使用的gradle版本，
+* 这些默认的路径我们一般不会更改的，这个文件里指明的gradle版本不对也是很多导包不成功的原因之一。
+* */
+
+//Declare this is an Android App
 apply plugin: 'com.android.application'
 
 android {
+    //The SDK version for compiling
+    /*
+    * 这个需要你本地安装该版本才行，
+    * 很多人导入新的第三方库，失败的原因之一是build version的版本不对，
+    * 这个可以手动更改成你本地已有的版本或者打开 SDK Manager 去下载对应版本。
+    * */
     compileSdkVersion 23
+    //Build Tool Version
     buildToolsVersion "23.0.3"
 
     defaultConfig {
+        //The Package Name of the App
         applicationId "biz.ys1003.myappportfolio"
+
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
+        debug{
+            //Debug Mode
+        }
         release {
+            //Release Mode
+
+            //是否进行混淆
             minifyEnabled false
+            //混淆文件的位置
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
 
 dependencies {
+    //编译libs目录下的所有jar包
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.3.0'

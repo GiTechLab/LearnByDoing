@@ -1,4 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+//这个文件是整个项目的gradle基础配置文件
+/*
+*   内容主要包含了两个方面：一个是声明仓库的源，这里可以看到是指明的jcenter(),
+ *  jcenter可以理解成是一个新的中央远程仓库，兼容maven中心仓库，而且性能更优。
+ *  另一个是声明了android gradle plugin的版本
+* */
 
 buildscript {
     repositories {
