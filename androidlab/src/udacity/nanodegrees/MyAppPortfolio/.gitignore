@@ -1,4 +1,6 @@
-*.iml
+# iml文件是要放在git中的。。不然，不显示module...
+#*.iml 
+
 .gradle
 /local.properties
 /.idea/workspace.xml
