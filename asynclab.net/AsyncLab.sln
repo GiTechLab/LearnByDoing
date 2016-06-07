@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLab", "AsyncLab\AsyncLab.csproj", "{7F509645-874A-40DD-BA29-9463454C6EC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLab.Exception", "AsyncLab.Exception\AsyncLab.Exception.csproj", "{A0681422-9E3B-4D7C-A60F-589A891054F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7F509645-874A-40DD-BA29-9463454C6EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F509645-874A-40DD-BA29-9463454C6EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F509645-874A-40DD-BA29-9463454C6EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0681422-9E3B-4D7C-A60F-589A891054F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0681422-9E3B-4D7C-A60F-589A891054F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0681422-9E3B-4D7C-A60F-589A891054F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0681422-9E3B-4D7C-A60F-589A891054F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
