@@ -13,6 +13,7 @@ namespace AsyncLab.ExceptionDemo
      * With async void methods, there is no Task object, 
      * so any exceptions thrown out of an async void method will be raised directly on the SynchronizationContext that was active when the async void method started.
      * 
+     * 注册TaskScheduler.UnobservedTaskException事件，记录Task中未处理异常信息，方便分析及错误定位。
      * 
      * https://msdn.microsoft.com/magazine/jj991977
      */
@@ -66,6 +67,8 @@ namespace AsyncLab.ExceptionDemo
         /// </summary>
         static async void ThrowExceptionInVoidAsyncCannotBeCaught()
         {
+            //For async void method, we should try...catch the exception inside the function block.
+
             await Task.Delay(1000);
             throw new System.Exception("This is an exception in Async-Void Method.");
         }
