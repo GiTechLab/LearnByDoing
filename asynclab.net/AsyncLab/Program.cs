@@ -10,6 +10,8 @@ namespace AsyncLab
     //async的作用是异步执行，await的作用是等待执行结果（会卡住异步方法中await以下的代码，但不会卡死主线程）。
 
     //http://www.cnblogs.com/yeagen/archive/2013/09/22/3334059.html
+    //http://www.infoq.com/cn/news/2011/10/Async-Cost //Cost on Async
+    //https://msdn.microsoft.com/en-us/magazine/hh456402.aspx  //Cost Detail on Async
     //http://www.cnblogs.com/x-xk/archive/2013/06/05/3118005.html
     //http://www.dozer.cc/2012/03/async-and-await-in-web-application.html
     //https://msdn.microsoft.com/magazine/jj991977 Async Best Practice
