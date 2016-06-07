@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLab.Exception", "Async
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLab.N4.0", "AsyncLab.N4.0\AsyncLab.N4.0.csproj", "{05DEE3E8-A75E-4CB2-B12A-3DBB4EDE64FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLab.MVC", "AsyncLab.MVC\AsyncLab.MVC.csproj", "{EF20B1D8-719C-434C-848F-24A79528ECA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{05DEE3E8-A75E-4CB2-B12A-3DBB4EDE64FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05DEE3E8-A75E-4CB2-B12A-3DBB4EDE64FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05DEE3E8-A75E-4CB2-B12A-3DBB4EDE64FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF20B1D8-719C-434C-848F-24A79528ECA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF20B1D8-719C-434C-848F-24A79528ECA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF20B1D8-719C-434C-848F-24A79528ECA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF20B1D8-719C-434C-848F-24A79528ECA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
