@@ -92,7 +92,6 @@ namespace AsyncLab
             Console.WriteLine("Hello, {0}.", taskName);
             for (var i = 0; i < 3; i++)
             {                
-                await Task.Delay(1000);
                 Console.WriteLine("Working on Task {0} of {1}", i, taskName);
                 //File.AppendAllText(@"C:\temp\" + taskName + ".txt", string.Format("Working on Task {0} of {1}" + System.Environment.NewLine, i, taskName), Encoding.UTF8);
 
