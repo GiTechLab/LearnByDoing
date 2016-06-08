@@ -45,6 +45,8 @@ namespace AsyncLab
         {
             if (Directory.Exists(@"C:\temp\") == false) Directory.CreateDirectory(@"C:\temp\");
 
+            ShowMessageAsync();
+
             Task t1 = Example1();
 
             //For showing the thread output
@@ -59,6 +61,7 @@ namespace AsyncLab
             //Option 2: result in depends on the sleep time
             //System.Threading.Thread.Sleep(2000);//Adjust the sleep time can affect the output range...
 
+            
             ShowMeAsync();
             ShowMeAsync2();
             Console.WriteLine("See, the main process is not blocked by the async method ShowMeAsync..");
@@ -66,6 +69,20 @@ namespace AsyncLab
             //注：是否注释掉ReadKey对显示结果有一定的影响，因为不注释的话，所有线程结果都会显示出来(因为主线程一直没有结束)
             //这个例子说明在Windows Form 类型的程序中，通常UI 主线程不会马上结束，所以这个控制台程序发生的例子不容易在UI程序中遇到
             Console.ReadKey();
+        }
+
+
+        private static async void ShowMessageAsync()
+        {
+            Console.WriteLine(await GetMessageAsync());
+        }
+
+        private static async Task<string> GetMessageAsync()
+        {
+            return await Task.Factory.StartNew(() => {
+                System.Threading.Thread.Sleep(6000);
+                return ">>>>This is an Async Message..<<<<";
+            });
         }
 
         /// <summary>
