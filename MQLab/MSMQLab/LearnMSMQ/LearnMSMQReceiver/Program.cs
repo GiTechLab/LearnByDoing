@@ -12,7 +12,7 @@ namespace LearnMSMQReceiver
     {
         static void Main(string[] args)
         {
-            MessageQueue mq = new MessageQueue();
+            var queue = new MessageQueue();
 
         }
     }
